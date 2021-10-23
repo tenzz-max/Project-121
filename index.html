@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h2 style="color: blue;">Case Study:</h2>
+            <span>
+                <img style="width: 500px;" src="google-lens.jpeg"> <h1 style="color: red;">VS</h1> <button class="btn btn-primary"><h1>MoibleNet</h1></button>
+            </span>
+
+                <ol class="images"> 
+
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="airpods.png">
+<br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">airpods</b>
+                            </span>
+
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Perfume, Essence</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+<br>
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="glue_stick.png">
+<br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">Lepage School Glue Stick</b>
+                            </span>
+
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Mocrophone, Mike</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+<br>                    
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="orange.png">
+<br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">Mandarin-Orange</b>
+                            </span>
+
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Joystick</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+<br>                    
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="pen.png">
+                            <br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">Economical Pen</b>
+                            </span>
+
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Pole</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+<br>                    
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="pencil.png">
+                            <br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">pencil</b>
+                            </span>
+
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Ballpoint Pen</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+<br>                    
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="purell_hand_sanitaizer.png">
+                            <br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">Purell Hand sanitizer</b>
+                            </span>
+
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Hair Spray</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+<br>                    
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="sissors.png">
+                            <br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">Scissors</b>
+                            </span>
+                            <br>
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Joystick</b>
+                            </span>
+                        </div>
+                    </li>
+<br>                    
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="spoon.png">
+                            <br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">Spoon</b>
+                            </span>
+                            <br>
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">ladle</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+<br>                    
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="tissue_paper.png">
+                            <br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">facial tissue</b>
+                            </span>
+
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Backpack</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+<br>                    
+                    <li>
+                        <div class="img_1">
+                            <h4><b>Test Image - </b></h4>
+                            <img src="water_bottle.png">
+                            <br>
+                            <span class="col-sm-4 col-xs-12 google lens">
+                                <p style="font-size: 21;"> Result On Google lens: </p>
+                                <b class="result">water bottle</b>
+                            </span>
+                            <br>
+                            <span class=" col-sm-4 col-xs-12 MobileNet">
+                                <p style="font-size: 21;">Results On MobileNet: </p>
+                                <b class="result">Punching Bag</b>
+                            </span>
+
+                            <h3 style="color: red;">Google Lens is more Accurate</h3>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="final_result">
+                    <h2>I have tested 10 images. <br>
+                    Google lens predicted 10 of them; MobileNet did not.<br>
+                Therefore google lens is better and Jkart should use it.</h2>
+                </div>
+        </div>
+    </center>
+</body>
+</html>
+
